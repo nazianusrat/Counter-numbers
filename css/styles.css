@@ -1,0 +1,133 @@
+/* Set a nice background for the entire body */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Counter container to center everything */
+.counter {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px; /* Add some space between the counter boxes and the Count button */
+}
+
+/* Each counter box styling */
+.single-counter {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+    position: relative;
+}
+
+/* Counter number (h1) styling */
+.countText {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #1e88e5;
+    background-color: #e3f2fd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling the input number field */
+.numbercounter {
+    padding: 10px;
+    width: 82%;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border: 2px solid #90caf9;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Add button styling */
+button {
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Button hover effects */
+button:hover {
+    background-color: #1565c0;
+    transform: scale(1.05);
+}
+
+/* Button active state (when pressed) */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Style the description under the input */
+p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #616161;
+}
+
+/* Style for the main Count button */
+.count {
+    background-color: #43a047;
+    color: white;
+    font-size: 18px;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+/* Centering the Count button below all counters */
+.count-container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Hover and press effects for the count button */
+.count:hover {
+    background-color: #2e7d32;
+}
+
+.count:active {
+    transform: scale(0.98);
+}
+
+/* Make the layout responsive for smaller screens */
+@media (max-width: 600px) {
+    .single-counter {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .counter {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .count {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}

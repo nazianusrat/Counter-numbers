@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="counter">
+        <div class="single-counter">
+            <input class="numbercounter" type="number">
+            <button onclick="numberAdd(0)">Add</button>
+            <p>count from 0 to <span class="text"></span></p>
+            <h1 data-num="" class="countText">0</h1>
+        </div>
+        <div class="single-counter">
+            <input class="numbercounter" type="number">
+            <button onclick="numberAdd(1)">Add</button>
+            <p>count from 0 to <span class="text"></span></p>
+            <h1 data-number="" class="countText">0</h1>
+        </div>
+        <div class="single-counter">
+            <input class="numbercounter" type="number">
+            <button onclick="numberAdd(2)">Add</button>
+            <p>count from 0 to <span class="text"></span></p>
+            <h1 data-num="" class="countText">0</h1>
+        </div>
+    </div>
+    
+    <!-- Count button container to position the button in the center -->
+    <div class="count-container">
+        <button class="count" onclick="count()">Count</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
